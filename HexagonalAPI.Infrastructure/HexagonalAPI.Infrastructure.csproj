@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HexagonalAPI.Application\HexagonalAPI.Application.csproj" />
+    <ProjectReference Include="..\HexagonalAPI.Domain\HexagonalAPI.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

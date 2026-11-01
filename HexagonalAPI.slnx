@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="HexagonalAPI.Api/HexagonalAPI.Api.csproj" />
+  <Project Path="HexagonalAPI.Application/HexagonalAPI.Application.csproj" />
+  <Project Path="HexagonalAPI.Domain/HexagonalAPI.Domain.csproj" />
+  <Project Path="HexagonalAPI.Infrastructure/HexagonalAPI.Infrastructure.csproj" />
+</Solution>

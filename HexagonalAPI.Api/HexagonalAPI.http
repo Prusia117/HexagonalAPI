@@ -1,0 +1,26 @@
+@HexagonalAPI_HostAddress = http://localhost:5183
+
+### Listar
+GET {{HexagonalAPI_HostAddress}}/api/productos
+Accept: application/json
+
+### Crear (el Id se genera: PROD-{1ª y 3ª letra}-{4 aleatorios}-{año})
+POST {{HexagonalAPI_HostAddress}}/api/productos
+Content-Type: application/json
+
+{ "nombre": "Laptop Gamer", "descripcion": "15 pulgadas", "precio": 1299.99, "stock": 5 }
+
+### Buscar
+GET {{HexagonalAPI_HostAddress}}/api/productos/buscar?termino=laptop
+
+### Obtener por Id (reemplaza el Id)
+GET {{HexagonalAPI_HostAddress}}/api/productos/PROD-LP-xxxx-26
+
+### Actualizar
+PUT {{HexagonalAPI_HostAddress}}/api/productos/PROD-LP-xxxx-26
+Content-Type: application/json
+
+{ "nombre": "Laptop Pro", "descripcion": null, "precio": 999, "stock": 3 }
+
+### Eliminar
+DELETE {{HexagonalAPI_HostAddress}}/api/productos/PROD-LP-xxxx-26
